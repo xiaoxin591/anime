@@ -1,0 +1,35 @@
+{
+  "exportedMediaSourceDataList": {
+    "mediaSources": [
+      {
+        "factoryId": "web-selector",
+        "version": 1,
+        "arguments": {
+          "name": "我的自编源-九次元",
+          "searchConfig": {
+            "searchUrl": "https://9ciyuan.net/vod-search.html?wd={keyword}",
+            "selectorSubjectFormat": {
+              "selectLists": ".public-list-box",
+              "name": "a.public-list-exp@title",
+              "author": ".right .role",
+              "description": ".right .desc",
+              "cover": ".cover@style",
+              "url": "a.public-list-exp@href"
+            }
+          },
+          "selectorChannelFormat": {
+            "selectChannelNames": ".anthology-tab span",
+            "selectEpisodeLists": ".anthology-list-play",
+            "selectEpisodesFromList": "a",
+            "matchEpisodeName": "@text",
+            "matchEpisodeUrl": "@href"
+          },
+          "matchVideo": {
+            "enableNestedUrl": true,
+            "matchVideoUrl": "(\\.m3u8|\\.mp4|\\.flv)"
+          }
+        }
+      }
+    ]
+  }
+}
