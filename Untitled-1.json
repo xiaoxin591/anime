@@ -5,6 +5,13 @@
         "factoryId": "web-selector",
         "version": 1,
         "arguments": {
+          "headers": {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+  "Referer": "https://9ciyuan.net/"
+},
+"addHeadersToVideo": {
+  "Referer": "https://9ciyuan.net/"
+}
           "name": "我的自编源-九次元",
           "searchConfig": {
             "searchUrl": "https://9ciyuan.net/vod-search.html?wd={keyword}",
